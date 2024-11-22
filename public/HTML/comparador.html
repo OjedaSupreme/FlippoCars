@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flippo Cars</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style3.css">
+</head>
+<body>
+    <div class="head"> 
+        <div class="logo">
+            <a href="/HTML/PaginaWeb.html">
+                <img class="logotipo" src="/imagenes/WhatsApp Image 2024-11-21 at 9.51.55 AM.jpeg" alt="">
+            </a>
+        </div> 
+        <nav class="navbar">
+            <a href="/HTML/comparador.html">Comparador</a>
+        </nav>
+        <nav class="navbar">
+            <a href="/HTML/PaginaWeb.html">Inicio</a>
+        </nav>
+        <nav class="navbar1">
+            <a href="/HTML/carros.html">Vehículos</a>
+        </nav>
+        <nav class="navbar2">
+            <a href="/HTML/inicio-secion.html">LogIn</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div id="car1" class="car-box" onclick="selectCar(1)">Selecciona el primer auto</div>
+        <div id="car2" class="car-box" onclick="selectCar(2)">Selecciona el segundo auto</div>
+    </div>
+    <div id="comparison" class="comparison"></div>
+    <div id="options" class="options"></div>
+
+    <script src="/js/comparador.js"></script>
+</body>
+</html>

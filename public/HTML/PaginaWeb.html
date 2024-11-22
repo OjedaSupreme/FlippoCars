@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flippo Cars </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="/css/style3.css">
+</head>
+<div class="head"> 
+    <div class="logo">
+        <a href="/HTML/PaginaWeb.html">
+            <img class="logotipo" src="/imagenes/WhatsApp Image 2024-11-21 at 9.51.55 AM.jpeg" alt="">
+        </a>
+    </div> 
+     <nav class="navbar">
+
+        <a href="/HTML/PaginaWeb.html">Inicio</a>
+        
+    </nav>
+    
+    <nav class=" navbar1">
+        <a href="/HTML/carros.html">Vehiculos</a>
+    </nav>
+<nav class="navbar2">
+<a href="/HTML/comparador.html">Comparador</a>
+</nav>
+
+<nav class="navbar2">
+    <a href="/HTML/inicio-secion.html">LogIn</a>
+    </nav>
+    
+
+
+</div>
+</nav>
+</div>
+   
+<body>
+
+
+    <style>
+        .img{
+            width: 150px;
+            height: 150px;
+        }
+        
+        
+        
+            </style>
+<main>
+
+    
+    <header class="content-header">
+            
+        <section class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="/imagenes/mx-5-removebg-preview.png" alt="Mazda Car">
+                </div>
+                <div class="slide">
+                    <img src="/imagenes/mazda_3_sedan-removebg-preview.png" alt="Car Download Image">
+                </div>
+                <div class="slide">
+                    <img src="/imagenes/Mazda_cx-30-removebg-preview.png" alt="Kia Car">
+                </div>
+            </div>
+            <div class="slide">
+                    <img src="/imagenes/mazda_cx-3-removebg-preview.png" alt="Kia Car">
+                </div>
+                <div class="slide">
+                    <img src="/imagenes/mazda-mazda2-sedan-rojo-perfil-v1.png" alt="Kia Car">
+                </div>
+                
+        </section>
+       
+
+       
+</div>
+
+
+   
+</header>
+<section class="content sau">
+    <h2 class="title">AUTOMOVILES</h2>
+    <p>
+       Marcas
+    </p>
+    <div class="container">
+        <div class="card2">
+            <div class="image-box">
+                <a href="/HTML/carros.html">
+                    <img src="/imagenes/mazda.jpg" alt="mazda">
+                </a>
+                
+            </div>
+            <div class="content">
+                <h1>Modelos desde 2024-2017</h1>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="image-box">
+                <img src="/imagenes/descarga.jpg" alt="descarga">
+            </div>
+            <div class="content">
+                <h1>Modelos desde 2024-2015</h1>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="image-box">
+                <img src="/imagenes/kia.jpg" alt="kia">
+            </div>
+            <div class="content">
+                <h1>Modelos desde 2024-2019</h1>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="content about">
+<h2 class="title"> Sobre la pagina</h2>
+<P>
+Nuestra pagina fue creada para ayudar a las personas que no se pueden decidir por un vehiculo o que no saben mucho de los vehiculos y nesesitan una segunda opinion.
+</P>
+
+</section>
+<section class="price">
+<article class="precio">
+<h2 class="title"> Precios</h2>
+<P>
+Nuestra sistema de precios esta diseñado para que el usuario al encontrar una opcion que le guste, pero no sea economica para el, pueda encontrar mas vehiculos similares a un precio mas economico.
+</P>
+</article>
+<section class="contacto">
+
+<h2 class="title"> Contactanos</h2>
+<p> 614-5697-959</p>
+
+</section>
+
+</div>
+</main>
+<script>
+    // JavaScript for the Image Slider
+    let currentIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function changeSlide() {
+        slides.forEach(slide => slide.style.display = 'none');
+        slides[currentIndex].style.display = 'block';
+        currentIndex = (currentIndex + 1) % totalSlides;
+    }
+
+    // Initialize the slider
+    setInterval(changeSlide, 3000); // Change slide every 3 seconds
+
+    // Display the first slide initially
+    changeSlide();
+</script>  
+        
+        
+</body>
+</html>
