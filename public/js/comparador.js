@@ -1,43 +1,43 @@
 const carData = {
-    "Toyota Corolla": {
-        precioInicial: 20000,
-        precioConcesionario: 22000,
-        gastoGasolina: 120,
+    "Ford Escape 2022": {
+        precioInicial: 786500,
+        precioConcesionario: 686500,
+        gastoGasolina: 650,
         seguridad: "Alta",
         kilometrosConTanque: 600,
         similares: ["Honda Civic", "Mazda 3", "Nissan Sentra"]
     },
-    "Honda Civic": {
-        precioInicial: 22000,
-        precioConcesionario: 24000,
-        gastoGasolina: 110,
-        seguridad: "Alta",
+    "Ford Mustang": {
+        precioInicial: 900000,
+        precioConcesionario: 750000,
+        gastoGasolina: 1200,
+        seguridad: "Media",
         kilometrosConTanque: 650,
-        similares: ["Toyota Corolla", "Mazda 3", "Hyundai Elantra"]
+        similares: ["Toyota Corolla", "Ford Focus", "Hyundai Elantra"]
     },
     "Mazda 3": {
-        precioInicial: 21000,
-        precioConcesionario: 23000,
-        gastoGasolina: 115,
-        seguridad: "Media",
+        precioInicial: 407900,
+        precioConcesionario: 350800,
+        gastoGasolina: 780,
+        seguridad: "Alta",
         kilometrosConTanque: 580,
         similares: ["Toyota Corolla", "Honda Civic", "Kia Forte"]
     },
     "Nissan Sentra": {
         precioInicial: 19500,
         precioConcesionario: 21500,
-        gastoGasolina: 130,
+        gastoGasolina: 600,
         seguridad: "Media",
         kilometrosConTanque: 550,
         similares: ["Mazda 3", "Hyundai Elantra", "Chevrolet Cruze"]
     },
     "Ford Focus": {
-        precioInicial: 21000,
-        precioConcesionario: 23000,
-        gastoGasolina: 125,
+        precioInicial: 210000,
+        precioConcesionario: 190000,
+        gastoGasolina: 500,
         seguridad: "Alta",
         kilometrosConTanque: 600,
-        similares: ["Chevrolet Cruze", "Toyota Corolla", "Honda Civic"]
+        similares: ["Chevrolet Cruze", "Toyota Corolla", "Mustang"]
     },
     "Chevrolet Cruze": {
         precioInicial: 19000,
@@ -110,6 +110,39 @@ const carData = {
         seguridad: "Alta",
         kilometrosConTanque: 400,
         similares: ["Audi Q3", "Mercedes-Benz GLA", "Lexus NX"]
+    },
+    
+    "Nissan Altima": {
+        precioInicial: 24500,
+        precioConcesionario: 26500,
+        gastoGasolina: 110,
+        seguridad: "Alta",
+        kilometrosConTanque: 600,
+        similares: ["Toyota Camry", "Hyundai Sonata", "Kia Optima"]
+    },
+    "Nissan Sentra": {
+        precioInicial: 19500,
+        precioConcesionario: 21500,
+        gastoGasolina: 95,
+        seguridad: "Alta",
+        kilometrosConTanque: 700,
+        similares: ["Mazda 3", "Honda Civic", "Hyundai Elantra"]
+    },
+    "Nissan Rogue": {
+        precioInicial: 28500,
+        precioConcesionario: 30500,
+        gastoGasolina: 120,
+        seguridad: "Media",
+        kilometrosConTanque: 550,
+        similares: ["Toyota RAV4", "Ford Escape", "Honda CR-V"]
+    },
+    "Nissan Versa": {
+        precioInicial: 16500,
+        precioConcesionario: 18500,
+        gastoGasolina: 85,
+        seguridad: "Media",
+        kilometrosConTanque: 800,
+        similares: ["Hyundai Accent", "Kia Rio", "Chevrolet Spark"]
     }
 };
 
