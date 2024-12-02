@@ -8,26 +8,50 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Serve static files
+
 app.use(express.static(path.join(__dirname, '../public')));
 
-// Root route redirects to PaginaWeb.html
+
 app.get('/', (req, res) => {
     res.redirect('/HTML/PaginaWeb.html');
 });
 
-// Handle HTML routes
 app.get('/HTML/:page', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/HTML', req.params.page));
 });
 
-// Handle CSS routes
 app.get('/css/:file', (req, res) => {
     res.setHeader('Content-Type', 'text/css');
     res.sendFile(path.join(__dirname, '../public/css', req.params.file));
 });
 
-// Add error handling
+
+app.post('/registrar', async (req, res) => {
+    try {
+        const { nombre, usuario, email, contraseña } = req.body;
+        
+        
+        console.log('Received registration data:', req.body);
+
+        const query = 'INSERT INTO usuarios (nombre, usuario, email, contraseña) VALUES (?, ?, ?, ?)';
+        
+        connection.query(query, [nombre, usuario, email, contraseña], (error, results) => {
+            if (error) {
+                console.error('Database error:', error);
+                res.status(500).json({ error: 'Error en el registro' });
+                return;
+            }
+            
+            console.log('Registration successful:', results);
+            res.status(200).json({ message: 'Registro exitoso' });
+        });
+    } catch (error) {
+        console.error('Server error:', error);
+        res.status(500).json({ error: 'Error en el servidor' });
+    }
+});
+
+
 app.use((err, req, res, next) => {
     if (err.code === 'ENOENT') {
         console.log('File not found:', err.path);
